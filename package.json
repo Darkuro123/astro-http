@@ -4,16 +4,19 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
+    "dev:remote": "astro dev --remote",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.10",
+    "@astrojs/db": "^0.18.2",
     "@astrojs/mdx": "^4.3.10",
     "@astrojs/node": "^9.5.0",
     "@astrojs/rss": "^4.0.13",
     "@astrojs/sitemap": "^3.6.0",
+    "@libsql/client": "^0.15.15",
     "astro": "^5.15.4",
     "sharp": "^0.34.3"
   }
