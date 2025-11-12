@@ -8,15 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@astrojs/cloudflare':
-        specifier: ^12.6.10
-        version: 12.6.10(@types/node@24.10.1)(astro@5.15.5(@types/node@24.10.1)(rollup@4.53.2)(typescript@5.9.3))
-      '@astrojs/db':
-        specifier: ^0.18.2
-        version: 0.18.2(@cloudflare/workers-types@4.20251111.0)
-      '@astrojs/mdx':
-        specifier: ^4.3.10
-        version: 4.3.10(astro@5.15.5(@types/node@24.10.1)(rollup@4.53.2)(typescript@5.9.3))
       '@astrojs/node':
         specifier: ^9.5.0
         version: 9.5.0(astro@5.15.5(@types/node@24.10.1)(rollup@4.53.2)(typescript@5.9.3))
@@ -29,12 +20,22 @@ importers:
       '@libsql/client':
         specifier: ^0.15.15
         version: 0.15.15
-      astro:
-        specifier: ^5.15.4
-        version: 5.15.5(@types/node@24.10.1)(rollup@4.53.2)(typescript@5.9.3)
       sharp:
         specifier: ^0.34.3
         version: 0.34.5
+    devDependencies:
+      '@astrojs/cloudflare':
+        specifier: ^12.6.10
+        version: 12.6.10(@types/node@24.10.1)(astro@5.15.5(@types/node@24.10.1)(rollup@4.53.2)(typescript@5.9.3))
+      '@astrojs/db':
+        specifier: ^0.18.2
+        version: 0.18.2(@cloudflare/workers-types@4.20251111.0)
+      '@astrojs/mdx':
+        specifier: ^4.3.10
+        version: 4.3.10(astro@5.15.5(@types/node@24.10.1)(rollup@4.53.2)(typescript@5.9.3))
+      astro:
+        specifier: ^5.15.5
+        version: 5.15.5(@types/node@24.10.1)(rollup@4.53.2)(typescript@5.9.3)
 
 packages:
 
