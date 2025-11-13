@@ -4,11 +4,15 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import cloudflare from '@astrojs/cloudflare';
 
+import db from "@astrojs/db";
+
+import vue from '@astrojs/vue';
+
 export default defineConfig({
   site: 'https://example.com',
-  output: 'server',
+  output: 'static',
   adapter: cloudflare(),
-  integrations: [mdx(), sitemap()], // ❌ quita db()
+  integrations: [mdx(), sitemap(), db(), vue()], // ❌ quita db()
   env: {
     schema: {
      ASTRO_DB_REMOTE_URL: envField.string({ context: 'server', access: 'secret' }),
